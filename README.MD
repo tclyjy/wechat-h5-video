@@ -228,6 +228,9 @@ npm run start
 ```
 
 ### Use
+```
+npm istall wechat-h5-video --save
+```
 ```js
 import wechatH5Video from 'wechatH5Video.min.js';
 let wechatH5Video = new wechatH5Video(source,options);
