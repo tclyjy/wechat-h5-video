@@ -1,14 +1,19 @@
 {
   "name": "wechat-h5-video",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Browser full screen H5 video player",
   "main": "build/wechatH5Video.js",
+  "homepage": "https://github.com/tclyjy/wechat-h5-video",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tclyjy/wechat-h5-video.git"
+  },
   "scripts": {
     "test": "jest",
     "start": "cross-env NODE_ENV=development webpack --watch",
     "build": "cross-env NODE_ENV=production webpack --progress --optimize-minimize && webpack --progress --display-modules --display-reasons --display-error-details --color"
   },
-  "author": "ERIC",
+  "author": "tclyjy",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
