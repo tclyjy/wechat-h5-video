@@ -1,0 +1,17 @@
+# IDE
+.idea
+
+# test
+test
+.travis.yml
+
+# node
+yarn.lock
+yarn-error.log
+
+# project
+src
+static
+dist
+temp
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    #videoWrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <script src="/wechatH5Video.js"></script>
+</head>
+
+<body>
+  <div id="videoWrapper">
+    wechatH5Video容器
+  </div>
+</body>
+
+</html>
+<script>
+  // var source = 'https://court1.ptnetwork001.com/upload/1541424669304689.mp4'
+  // var source = 'https://s2.luckincoffeecdn.com/luckymktrm/media/mk.c464ec86.mp4' // 冯唐视频源
+  // var source = 'http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4'
+  var source = 'https://www.haorooms.com/uploads/invitePage/media/move.mp4';
+  var video = new wechatH5Video(source, {
+    context: 'videoWrapper',
+    mask: true,
+    poster: 'https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1541401188&di=41264a717eb6a592709efc04a66e216d&src=http://i8.download.fd.pchome.net/t_600x1024/g1/M00/07/04/oYYBAFMioPmIClVuAALr2NPIYaIAABZ9QKPJJUAAuvw540.jpg',
+    playBtn: true,
+    jumpBtn: true,
+    autoClose: false,
+    canvas: false,
+    isRotate: true,
+    onPlay() {
+      console.log('play');
+    },
+    onPause() {
+      console.log('pause');
+    },
+    onEnd() {
+      console.log('end');
+    }
+  });
+  video.load();
+</script>
+<script src="https://cdn.bootcss.com/eruda/1.5.4/eruda.min.js"></script>
+<script>
+  eruda.init();
+</script>
